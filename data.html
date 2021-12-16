@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get details and display in tables  </title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+    <div id="container">
+      <div class="input">Product ID: <input class="ipt" id="id"  type="text" placeholder="Enter ID Here" ></div>
+      <div class="input">Product Name: <input class="ipt" id="name" type="text" placeholder="Enter Name Here"></div>
+      <div class="input">Unit Per Price: <input class="ipt" id="price" name="fstval" type="number" placeholder="Enter Price Here"></div>
+      <div class="input">Quantity: <input class="ipt" id="qty" name="secval" type="number" placeholder="Enter Quntity Here"></div>
+      <button id="amt" onclick="calculateAmt()">Net Amount</button>
+      <div class="input" id="netAmt" ></div>
+      <button id="entry" onclick="displayDetails()">Input Entry</button>
+      
+
+    </div>
+     <table id="display">
+         <tr>
+             <th>Product ID</th>
+             <th>Product Name</th>
+             <th>Unit Price </th>
+             <th>Quantity</th>
+             <th>Net Amount</th>
+         </tr>
+     </table>
+     <button id="tolAmt" onclick="totalAmount()">Total Amount</button>
+     <div class="input" id="tAmt"></div>
+    
+</body>
+<script src="data.js"></script>
+</html>
